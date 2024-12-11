@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "matter light";
+}
+
+*::selection {
+    color: #fff;
+    background-color: #000;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    width: 100%;
+    background-color: #fff;
+    padding-bottom: 5vw;
+}
+
+#home {
+    width: 100%;
+    min-height: 100vh;
+}
+
+#nav {
+    width: 100%;
+    padding: 30px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav img {
+    width: 115px;
+}
+
+#nav #right {
+    display: flex;
+    gap: 40px;
+    letter-spacing: -1px;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+#nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+#nav i {
+    font-size: 20px;
+}
+
+#homemain {
+    padding: 15vw 15vw;
+}
+
+#homemain h1 {
+    letter-spacing: -.05vw;
+    font-size: 1.3vw;
+    font-weight: 600;
+}
+
+#homemain .headings {
+    display: flex;
+    gap: 40px;
+}
+
+#homemain .headings>h1 {
+    /* color: transparent;
+     -webkit-text-stroke: 1px #000;  /* This work for the text as in the website but in my case it is not working, the border is too thick. So i used shadow for the text */
+    color: #fff;
+    text-shadow:
+        1px 1px 0px black,
+        -1px 1px 0px black,
+        1px -1px 0px black,
+        -1px -1px 0px black;
+    /*Very thin outline effect*/
+    font-size: 7vw;
+    font-weight: 900;
+    letter-spacing: -5px;
+    line-height: 1;
+}
+
+#homemain .headings h1:hover{
+    color: #000;
+}
+
+#homelast {
+    padding: 5vw 15vw;
+}
+
+#homelast p {
+    width: 70%;
+    font-size: 1.7vw;
+    font-weight: 500;
+    letter-spacing: -.1vw;
+}
+
+#homelast p::selection {
+    color: #fff;
+    background-color: #000;
+}
+
+#featured {
+    padding: 10vw 15vw;
+}
+
+#featured h1 {
+    font-size: 4vw;
+    font-weight: 500;
+    line-height: 1;
+}
+
+#fheading>h1:nth-child(2) {
+    color: #fff;
+    text-shadow:
+        1px 1px 0px black,
+        -1px 1px 0px black,
+        1px -1px 0px black,
+        -1px -1px 0px black;
+}
+
+#fimages {
+    width: 100%;
+    height: 100vh;
+    margin-top: 5vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+#fleft {
+    overflow: hidden;
+    width: 45%;
+    height: inherit;
+}
+
+#fleft .fleftelem {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#fleft .fleftelem h3 {
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+#fleft .fleftelem h1 {
+    font-size: 2.5vw;
+    font-weight: 400;
+    line-height: 1;
+    margin: 1vw 0;
+    text-transform: capitalize;
+}
+
+#fleft .fleftelem h4 {
+    font-weight: 400;
+}
+
+#fright {
+    width: 45%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#fright .images {
+    width: 90%;
+    height: 90%;
+    background-color: red;
+}
+
+#fright .images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+.btn button{
+    padding: 1.3vw 2vw;
+    border-radius: 100px;
+    font-size: 1vw;
+    letter-spacing: -1px;
+    font-weight: 500;
+    border: 2px solid #e6e6e6;
+    background-color: #fff;
+}
+
+#dev{
+    width: 100%;
+    padding: 5vw 15vw;
+}
+
+#dev h1{
+    font-size: 4vw;
+    font-weight: 500;
+    width: 60%;
+    letter-spacing: -.5px;
+    line-height: 1;
+}
+
+#dev p{
+    font-size: 1.5vw;
+    margin-top: 3vw;
+    width: 60%;
+    letter-spacing: -.5px;
+}
+
+#slides{
+    width: 100%;
+    padding: 3vw 8vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slide{
+    width: 30%;
+}
+
+.slide .image{
+    width: 100%;
+    height: 270px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slide .tag{
+    margin: 20px 10px;
+    padding: 10px 20px;
+    background-color: #f7f7f7;
+    width: fit-content;
+    border-radius: 100px;
+}
+
+.slide h3{
+    font-size: 1.3vw;
+    font-weight: 500;
+    letter-spacing: -.5px;
+}
+
+.slide .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
